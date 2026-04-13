@@ -12,9 +12,9 @@ export default function ProductCard({p, setCart}){
 
     return(
     <article className="product-card">
-      <img src={`website_images/PROD_${p.imagefile}`} alt={p.title} />
-      <a href="#">${p.category}</a>
-      <h3>{p.title}</h3>
+      <img src={p.imageURL} alt={p.productname} />
+      <a href="#">{p.category}</a>
+      <h3>{p.productname}</h3>
       <p>Kr {p.price},-</p>
       <button onClick={handleClick}>Legg i handlevogn</button>
     </article>)
