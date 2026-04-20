@@ -3,7 +3,8 @@ import ProductCard from './ProductCard'
 import client from '../helpers/client'
 
 export default function Products({products, setCart}){
-    const [sanityProducts, setSanityProducts] = useState(null)
+  // Lagrer produktene fra Sanity  
+  const [sanityProducts, setSanityProducts] = useState(null)
 
     useEffect(() => {
       async function fetchAllProducts() {
